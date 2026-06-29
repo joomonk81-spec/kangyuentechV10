@@ -1,0 +1,22 @@
+KangYu EnTech V2 Video + Case Detail Template Update
+
+Added:
+- cases/zhengzhou-byd-coating-exhaust.html
+- cases/case-detail-template.html
+- templates/product-video-module-template.html
+- videos/products/README-product-videos.txt
+- videos/cases/README-case-videos.txt
+- VIDEO-AND-CASE-DETAIL-STRUCTURE.txt
+
+Updated:
+- All 8 product detail pages include a reserved 3D Animation / Working Principle video window.
+- projects.html first Zhengzhou BYD card links to the new case detail page.
+- No real video files are included yet; pages use visual video placeholders and data-video-src paths for future connection.
+
+Integrity:
+- Product pages with video module: 8/8
+- Missing real src image/file references: 0
+None
+
+Note:
+data-video-src values are future video connection paths and are not counted as broken links.

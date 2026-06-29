@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies | KangYu EnTech</title>
+  <meta name="description" content="KangYu EnTech case library for coating exhaust, plastic and rubber pelletizing exhaust, VOCs, oil mist, odor and integrated industrial waste gas treatment projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kyBlue: '#0078BE',
+            kyBlueDark: '#004C8C',
+            kyGreen: '#8CC63F',
+            kyGreenDark: '#6AAE23',
+            kyNavy: '#082D4F',
+            ink: '#111827',
+            soft: '#F5F9FB',
+            line: '#E3E8EE'
+          },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          boxShadow: {
+            soft: '0 24px 70px rgba(8,45,79,.08)',
+            card: '0 12px 38px rgba(8,45,79,.08)',
+            brand: '0 18px 44px rgba(0,120,190,.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --blue:#0078BE; --green:#8CC63F; --navy:#082D4F; --ink:#111827; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,sans-serif; color:var(--ink); background:#fff; overflow-x:hidden; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+    .brand-lockup { display:flex; align-items:center; gap:12px; }
+    .brand-k { width:54px; height:54px; object-fit:contain; filter:drop-shadow(0 8px 18px rgba(0,120,190,.18)); }
+    .brand-script { display:flex; align-items:baseline; gap:0; font-weight:900; font-size:25px; line-height:1; letter-spacing:.025em; white-space:nowrap; text-transform:uppercase; }
+    .brand-script .kangyu { color:var(--green); }
+    .brand-script .entech { color:var(--blue); }
+    .brand-script.on-dark .kangyu { color:#9EDB46; }
+    .brand-script.on-dark .entech { color:#42BAFF; }
+
+    .brand-line { position:relative; }
+    .brand-line::after { content:""; position:absolute; left:0; bottom:-15px; width:150px; height:5px; border-radius:999px; background:linear-gradient(90deg,var(--blue) 0 52%,transparent 52% 60%,var(--green) 60%); }
+    .section-k { position:relative; isolation:isolate; }
+    .section-k::before { content:"K"; position:absolute; right:4%; top:3%; font-size:min(18vw,210px); line-height:1; font-weight:900; color:rgba(0,120,190,.035); z-index:-1; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .72s ease, transform .72s ease; }
+    .reveal.show { opacity:1; transform:translateY(0); }
+    .scroll-progress { transform-origin:left center; transform:scaleX(0); transition:transform .12s linear; }
+
+    .nav-item { position:relative; }
+    .nav-parent { display:inline-flex; align-items:center; gap:6px; padding:26px 0; }
+    .nav-parent::after { content:'▾'; font-size:10px; opacity:.68; transform:translateY(-1px); }
+    .mega-panel { position:fixed; left:0; right:0; top:82px; width:100%; border-top:1px solid rgba(17,24,39,.10); background:rgba(255,255,255,.96); color:#111827; box-shadow:0 30px 80px rgba(8,45,79,.14); opacity:0; transform:translateY(10px); pointer-events:none; transition:opacity .22s ease, transform .22s ease; backdrop-filter:blur(18px); }
+    .nav-item:hover .mega-panel { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .mega-inner { max-width:1420px; margin:0 auto; display:grid; grid-template-columns:minmax(300px,430px) 1fr; gap:46px; padding:34px 32px 38px; }
+    .mega-image { position:relative; overflow:hidden; border-radius:2px; min-height:218px; background:#F5F9FB; }
+    .mega-image img { width:100%; height:100%; min-height:218px; object-fit:cover; display:block; transition:transform .55s ease; }
+    .nav-item:hover .mega-image img { transform:scale(1.035); }
+    .mega-caption { position:absolute; left:22px; bottom:20px; right:22px; color:#fff; text-shadow:0 6px 22px rgba(0,0,0,.55); }
+    .mega-caption p { font-size:12px; font-weight:900; letter-spacing:.22em; text-transform:uppercase; color:#9EDB46; }
+    .mega-caption h3 { margin-top:8px; font-size:28px; font-weight:900; letter-spacing:-.03em; }
+    .mega-list { display:grid; grid-template-columns:repeat(2,minmax(220px,1fr)); gap:2px 44px; border-left:1px solid #E3E8EE; padding-left:46px; align-content:start; }
+    .mega-link { display:block; padding:14px 0; border-bottom:1px solid #E3E8EE; font-size:20px; font-weight:600; letter-spacing:-.02em; color:#646B73; transition:.2s ease; }
+    .mega-link:hover { color:var(--blue); padding-left:10px; }
+    .mega-link small { display:block; margin-top:5px; font-size:11px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; color:#9aa3ad; }
+
+    .lang-menu { opacity:0; transform:translateY(8px); pointer-events:none; transition:.22s ease; }
+    .lang-wrap:hover .lang-menu { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .globe-btn { width:44px; height:44px; display:grid; place-items:center; border-radius:999px; border:1px solid rgba(17,24,39,.12); background:#fff; color:#111827; transition:.24s ease; }
+    .lang-option.active { background:#F5F9FB; color:var(--blue); }
+
+    .hero-bg { background:
+      radial-gradient(circle at 78% 16%, rgba(140,198,63,.14), transparent 27%),
+      radial-gradient(circle at 12% 32%, rgba(0,120,190,.12), transparent 22%),
+      linear-gradient(135deg,#F5F9FB 0%, #fff 48%, #EEF7FB 100%);
+    }
+    .pill { border:1px solid rgba(0,120,190,.18); border-radius:999px; background:#fff; padding:10px 15px; font-size:12px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; color:#082D4F; }
+    .stat-card { border:1px solid #E3E8EE; border-radius:1.8rem; background:#fff; padding:28px; box-shadow:0 12px 38px rgba(8,45,79,.06); }
+    .stat-card b { display:block; font-size:42px; line-height:1; color:#0078BE; letter-spacing:-.06em; }
+    .stat-card span { display:block; margin-top:12px; color:#5B6472; line-height:1.65; }
+
+    .hero-photo { position:relative; min-height:520px; overflow:hidden; border-radius:2.5rem; background:#082D4F; box-shadow:0 24px 70px rgba(8,45,79,.12); }
+    .hero-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .hero-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(8,45,79,.76)); }
+    .hero-label { position:absolute; left:28px; right:28px; bottom:28px; z-index:2; color:#fff; }
+    .hero-label span { display:inline-flex; border-radius:999px; background:#8CC63F; color:#082D4F; padding:8px 13px; font-size:11px; font-weight:900; letter-spacing:.16em; text-transform:uppercase; }
+    .hero-label h3 { margin-top:16px; font-size:34px; line-height:1.05; font-weight:900; letter-spacing:-.05em; }
+    .hero-label p { margin-top:12px; max-width:520px; color:rgba(255,255,255,.78); line-height:1.75; }
+
+    .filter-bar { position:sticky; top:84px; z-index:30; border:1px solid #E3E8EE; border-radius:1.6rem; background:rgba(255,255,255,.92); box-shadow:0 18px 50px rgba(8,45,79,.08); backdrop-filter:blur(16px); }
+    .filter-btn { border-radius:999px; padding:12px 16px; font-size:12px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; color:#516070; transition:.2s ease; }
+    .filter-btn.active, .filter-btn:hover { background:#082D4F; color:#fff; }
+    .search-input { width:100%; border:1px solid #E3E8EE; border-radius:999px; padding:13px 18px; outline:none; color:#111827; background:#fff; }
+    .search-input:focus { border-color:#0078BE; box-shadow:0 0 0 4px rgba(0,120,190,.10); }
+
+    .case-card { display:block; overflow:hidden; border:1px solid #E3E8EE; border-radius:2rem; background:#fff; box-shadow:0 16px 46px rgba(8,45,79,.07); transition:.28s ease; }
+    .case-card:hover { transform:translateY(-7px); border-color:#082D4F; box-shadow:0 30px 78px rgba(8,45,79,.16); }
+    .case-card.hidden-case { display:none; }
+    .case-image { position:relative; min-height:250px; overflow:hidden; background:#082D4F; }
+    .case-image img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; transition:.55s ease; }
+    .case-card:hover .case-image img { transform:scale(1.045); }
+    .case-image::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0),rgba(8,45,79,.48)); }
+    .case-tag { position:absolute; left:18px; bottom:18px; z-index:2; border-radius:999px; background:#fff; color:#082D4F; padding:8px 12px; font-size:11px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+    .page-badge { position:absolute; right:18px; top:18px; z-index:2; border-radius:999px; background:rgba(8,45,79,.88); color:#fff; padding:7px 11px; font-size:11px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+    .case-body { padding:25px; min-height:305px; display:flex; flex-direction:column; }
+    .case-body h3 { font-size:23px; line-height:1.12; font-weight:900; letter-spacing:-.04em; color:#111827; min-height:54px; }
+    .case-body p { margin-top:12px; color:#5B6472; line-height:1.68; min-height:80px; }
+    .case-meta { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto; }
+    .meta-box { border-radius:1rem; background:#F5F9FB; padding:12px; min-height:74px; }
+    .meta-box small, .route-line small { display:block; font-size:10px; font-weight:900; letter-spacing:.16em; text-transform:uppercase; color:#7A8593; }
+    .meta-box b { display:block; margin-top:6px; font-size:13px; line-height:1.35; color:#082D4F; }
+    .route-line { margin-top:10px; border-radius:1rem; background:#F5F9FB; padding:12px; }
+    .route-line span { display:block; margin-top:6px; font-size:13px; line-height:1.42; font-weight:800; color:#082D4F; }
+
+    .update-card { border:1px solid #E3E8EE; border-radius:2rem; background:#fff; padding:28px; box-shadow:0 18px 52px rgba(8,45,79,.08); }
+    .update-card code { display:block; margin-top:16px; padding:16px; border-radius:1rem; background:#082D4F; color:#fff; white-space:pre-wrap; font-size:12px; line-height:1.7; }
+
+    .cta-band { background:linear-gradient(135deg,#082D4F 0%, #0B4777 65%, #0078BE 100%); }
+    .magnetic { transition:transform .18s ease, box-shadow .25s ease, background .25s ease, color .25s ease; }
+    .interactive-link { position:relative; }
+    .interactive-link::after { content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; border-radius:999px; background:linear-gradient(90deg,var(--blue),var(--green)); transition:width .24s ease; }
+    .interactive-link:hover::after { width:100%; }
+
+    .assistant-panel { opacity:0; transform:translateY(14px) scale(.98); pointer-events:none; transition:.25s ease; }
+    .assistant-panel.open { opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+    .k-pulse { box-shadow:0 0 0 0 rgba(140,198,63,.34); animation:kPulse 2.4s infinite; }
+    @keyframes kPulse { 0% { box-shadow:0 0 0 0 rgba(140,198,63,.34); } 70% { box-shadow:0 0 0 14px rgba(140,198,63,0); } 100% { box-shadow:0 0 0 0 rgba(140,198,63,0); } }
+    .assistant-link { display:block; border-radius:18px; background:#F5F9FB; padding:14px 16px; font-size:14px; font-weight:800; color:#111827; transition:.2s ease; }
+    .assistant-link:hover { background:#082D4F; color:#fff; transform:translateY(-2px); }
+    .footer-orbit { position:absolute; right:-120px; top:-120px; width:360px; height:360px; border-radius:999px; border:1px solid rgba(255,255,255,.12); }
+    .value-pill { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; background:#F5F9FB; color:#082D4F; padding:8px 12px; font-size:12px; font-weight:900; letter-spacing:.08em; }
+
+    @media (max-width:1023px) {
+      .mega-panel { display:none; }
+      .brand-script { font-size:20px; }
+      .brand-k { width:46px; height:46px; }
+      .case-meta { grid-template-columns:1fr; }
+      .case-body h3, .case-body p { min-height:auto; }
+      .filter-bar { position:relative; top:auto; }
+    }
+    @media (prefers-reduced-motion:reduce) { .reveal,.k-pulse { animation:none!important; transition:none!important; transform:none!important; opacity:1!important; } }
+  
+.footer-orbit{position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+.cert-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;color:#fff;background:rgba(255,255,255,.06)}
+.cert-badge svg{width:22px;height:22px}
+.social-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:9px 12px;font-size:12px;font-weight:900;color:#fff;background:rgba(255,255,255,.06);transition:.2s ease}
+.social-btn:hover{background:#fff;color:#082D4F}
+.value-pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#F5F9FB;color:#082D4F;padding:8px 12px;font-size:12px;font-weight:900;letter-spacing:.08em}
+
+</style>
+</head>
+<body>
+  <svg aria-hidden="true" class="hidden">
+    <symbol id="i-globe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM3.6 9h16.8M3.6 15h16.8M12 3c2.1 2.3 3.2 5.3 3.2 9S14.1 18.7 12 21M12 3C9.9 5.3 8.8 8.3 8.8 12s1.1 6.7 3.2 9"/></symbol>
+  </svg>
+
+  <header id="siteHeader" class="fixed inset-x-0 top-0 z-50 bg-white/95 shadow-card backdrop-blur-md transition-all duration-300">
+    <div class="mx-auto flex h-20 max-w-[1420px] items-center justify-between px-5 lg:px-8">
+      <a href="index.html" class="brand-lockup" aria-label="KangYu EnTech Home">
+        <img src="images/k-mark.png" alt="KangYu K mark" class="brand-k" />
+        <span class="brand-script"><span class="kangyu">KANGYU</span><span class="entech">ENTECH</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-[13px] font-extrabold uppercase tracking-[.14em] text-ink lg:flex">
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="about.html" data-i18n="nav_about">About</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/hero-rto-line.webp" alt="KangYu capability"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>About Us</p><h3>KangYu EnTech</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="about.html#company">Company Profile<small>Who we are</small></a>
+                <a class="mega-link" href="about.html#history">History<small>Development path</small></a>
+                <a class="mega-link" href="about.html#rd">R&amp;D Innovation<small>Engineering capability</small></a>
+                <a class="mega-link" href="about.html#manufacturing">Manufacturing Base<small>Factory and quality</small></a>
+                <a class="mega-link" href="about.html#news">News<small>Company updates</small></a>
+                <a class="mega-link" href="about.html#certificates">Certificates<small>ISO / CE / compliance</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/case-shenzhen-byd.webp" alt="Coating and pelletizing exhaust solutions"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>Solutions</p><h3>Coating &amp; Pelletizing Exhaust</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="solutions.html#coating">Coating Exhaust<small>Paint mist / VOCs / spray booths</small></a>
+                <a class="mega-link" href="solutions.html#pelletizing">Plastic &amp; Rubber Pelletizing<small>Oil mist / odor / smoke / VOCs</small></a>
+                <a class="mega-link" href="solutions.html#pretreatment">Pre-treatment<small>Scrubber / Filter Box / ESP</small></a>
+                <a class="mega-link" href="solutions.html#voc">VOC Treatment<small>Rotor / RTO / Carbon / CO</small></a>
+                <a class="mega-link" href="solutions.html#dust">Dust &amp; Oil Mist<small>Dust Collector / ESP</small></a>
+                <a class="mega-link" href="solutions.html#turnkey">Turnkey Systems<small>Diagnosis to operation support</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="products.html" data-i18n="nav_projects">Products</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/product-zeolite-rto.webp" alt="Core products"><div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent"></div><div class="mega-caption"><p>Core Products</p><h3>Equipment for complex lines</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="products/zeolite-rotor-rto.html">Zeolite Rotor + RTO<small>High-volume VOC streams</small></a>
+                <a class="mega-link" href="products/rto-system.html">RTO System<small>Thermal oxidation</small></a>
+                <a class="mega-link" href="products/high-voltage-esp.html">High-Voltage ESP<small>Oil mist / smoke</small></a>
+                <a class="mega-link" href="products/cyclonic-scrubber.html">Cyclonic Scrubber<small>Wet pre-treatment</small></a>
+                <a class="mega-link" href="products/activated-carbon.html">Activated Carbon<small>Adsorption / desorption</small></a>
+                <a class="mega-link" href="products/dust-collector.html">Dust Collector<small>Pulse-jet filtration</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="industries.html" data-i18n="nav_industries">Industries</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/case-jinan-byd.webp" alt="Industrial applications"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>Industries</p><h3>Designed around production</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="industries.html#automotive">Automotive &amp; Coating<small>Paint mist / VOCs</small></a>
+                <a class="mega-link" href="industries.html#recycling">Plastic Recycling<small>Granulation fumes</small></a>
+                <a class="mega-link" href="industries.html#rubber">Plastic &amp; Rubber<small>Oil mist / odor / smoke</small></a>
+                <a class="mega-link" href="industries.html#machinery">Machinery Manufacturing<small>Dust / oil mist</small></a>
+                <a class="mega-link" href="industries.html#new-materials">New Materials<small>Complex VOC treatment</small></a>
+                <a class="mega-link" href="industries.html#odor">Odor Control<small>Odorous exhaust</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="text-kyBlue transition hover:text-kyGreen" href="projects.html" data-i18n="nav_cases">Cases</a>
+        <a class="transition hover:text-kyGreen" href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a class="transition hover:text-kyGreen" href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="hidden items-center gap-3 lg:flex">
+        <div class="lang-wrap relative">
+          <button class="globe-btn" aria-label="Language selector" title="Language"><svg class="h-5 w-5"><use href="#i-globe"/></svg></button>
+          <div class="lang-menu absolute right-0 top-12 w-48 rounded-2xl border border-black/10 bg-white p-2 text-sm font-semibold text-ink shadow-card">
+            <button class="lang-option active flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="en"><span>English</span><span class="text-xs text-kyBlue">EN</span></button>
+            <button class="lang-option flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="es"><span>Español</span><span class="text-xs text-kyBlue">ES</span></button>
+            <button class="lang-option flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="ru"><span>Русский</span><span class="text-xs text-kyBlue">RU</span></button>
+          </div>
+        </div>
+        <a href="contact.html" class="magnetic rounded-full bg-kyBlue px-5 py-3 text-[12px] font-extrabold uppercase tracking-[.14em] text-white transition hover:bg-kyGreen" data-i18n="talk">Talk to Us</a>
+      </div>
+      <button id="mobileBtn" class="rounded-full border border-black/10 bg-white p-3 text-ink shadow-card lg:hidden" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div class="h-1 w-full bg-gradient-to-r from-kyBlue via-kyBlue to-kyGreen opacity-95"></div>
+    <div class="h-[2px] w-full bg-transparent"><div id="scrollProgress" class="scroll-progress h-full bg-gradient-to-r from-kyBlue to-kyGreen"></div></div>
+    <div id="mobileMenu" class="hidden border-t border-black/10 bg-white px-5 py-6 shadow-card lg:hidden">
+      <div class="flex flex-col gap-4 text-sm font-extrabold uppercase tracking-[.16em] text-ink">
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="products.html" data-i18n="nav_projects">Products</a>
+        <a href="industries.html" data-i18n="nav_industries">Industries</a>
+        <a href="projects.html" data-i18n="nav_cases">Cases</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero-bg pt-28">
+    <section class="mx-auto grid min-h-[680px] max-w-[1420px] gap-12 px-5 py-20 lg:grid-cols-[.92fr_1.08fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyBlue" data-i18n="hero_eyebrow">Case Library</p>
+        <h1 class="brand-line mt-5 text-5xl font-black leading-[1.02] tracking-[-.06em] sm:text-6xl lg:text-7xl" data-i18n="hero_title">All coating and pelletizing exhaust cases in one library.</h1>
+        <p class="mt-12 max-w-2xl text-lg font-medium leading-8 text-gray-600" data-i18n="hero_text">A regularly updated case library for coating VOCs, plastic/rubber pelletizing fumes, oil mist, odor and integrated treatment systems.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="pill">34 Total Cases</span>
+          <span class="pill">14 Coating Cases</span>
+          <span class="pill">20 Pelletizing Cases</span>
+          <span class="pill">Regular Updates</span>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="stat-card"><b>34</b><span>project references displayed</span></div>
+          <div class="stat-card"><b>14</b><span>coating exhaust cases</span></div>
+          <div class="stat-card"><b>20</b><span>plastic / rubber pelletizing cases</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="hero-photo">
+          <img src="images/cases/p04-zhengzhou-byd.webp" alt="KangYu case library">
+          <div class="hero-label">
+            <span>Project Proof</span>
+            <h3>Every case gets visual space.</h3>
+            <p>All cases from the case collection are shown, with filters and search for future updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="case-library" class="section-k bg-white py-24">
+    <div class="mx-auto max-w-[1420px] px-5 lg:px-8">
+      <div class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyBlue">Complete Case Library</p>
+          <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl">Easy to browse. Easy to update.</h2>
+        </div>
+        <a href="cases/zhengzhou-byd-coating-exhaust.html" class="magnetic w-fit rounded-full bg-kyBlue px-6 py-3 text-sm font-extrabold uppercase tracking-[.14em] text-white transition hover:bg-kyGreen">Ask for Similar Route</a>
+      </div>
+
+      <div class="filter-bar reveal mt-16 p-4">
+        <div class="grid gap-4 lg:grid-cols-[1fr_360px] lg:items-center">
+          <div class="flex flex-wrap gap-2">
+            <button class="filter-btn active" data-filter="all">All Cases <span>(34)</span></button>
+            <button class="filter-btn" data-filter="coating">Coating <span>(14)</span></button>
+            <button class="filter-btn" data-filter="pelletizing">Plastic / Rubber <span>(20)</span></button>
+          </div>
+          <input id="caseSearch" class="search-input" type="search" placeholder="Search by client, industry, route..." />
+        </div>
+      </div>
+
+      <div id="caseGrid" class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        
+        <article class="case-card reveal" data-category="coating" data-title="zhengzhou byd" data-industry="automotive coating" data-route="zeolite twin rotor + rto">
+          <div class="case-image">
+            <img src="images/cases/p04-zhengzhou-byd.webp" alt="Zhengzhou BYD case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.4</span>
+          </div>
+          <div class="case-body">
+            <h3>Zhengzhou BYD</h3>
+            <p>Large-volume coating waste gas treatment for automotive manufacturing.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Automotive Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>340,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Zeolite Twin Rotor + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="xcmg group" data-industry="heavy machinery coating" data-route="dry filtration + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p05-xcmg-group.webp" alt="XCMG Group case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.5</span>
+          </div>
+          <div class="case-body">
+            <h3>XCMG Group</h3>
+            <p>Coating VOCs and particulate control for heavy machinery painting.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Heavy Machinery Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>50,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Dry Filtration + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="hefei changqing" data-industry="automotive components" data-route="twin rotor + rto">
+          <div class="case-image">
+            <img src="images/cases/p06-hefei-changqing.webp" alt="Hefei Changqing case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.6</span>
+          </div>
+          <div class="case-body">
+            <h3>Hefei Changqing</h3>
+            <p>High-volume spray coating exhaust system for automotive component production.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Automotive Components</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>340,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Twin Rotor + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="youbang radiator (anhui)" data-industry="radiator manufacturing" data-route="rotor + rto">
+          <div class="case-image">
+            <img src="images/cases/p07-youbang-radiator-anhui.webp" alt="Youbang Radiator (Anhui) case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.7</span>
+          </div>
+          <div class="case-body">
+            <h3>Youbang Radiator (Anhui)</h3>
+            <p>Integrated rotor concentration and RTO combustion system for coating VOCs.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Radiator Manufacturing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>200,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Rotor + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="shenzhen byd" data-industry="new energy vehicle coating" data-route="cyclone scrubber + filter box + carbon + dust collector">
+          <div class="case-image">
+            <img src="images/cases/p08-shenzhen-byd.webp" alt="Shenzhen BYD case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.8</span>
+          </div>
+          <div class="case-body">
+            <h3>Shenzhen BYD</h3>
+            <p>Integrated treatment for spray coating waste gas with solvents and particles.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>New Energy Vehicle Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>100,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + Filter Box + Carbon + Dust Collector</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="shanxi project" data-industry="industrial coating" data-route="zeolite rotor concentrator + rto">
+          <div class="case-image">
+            <img src="images/cases/p09-shanxi-project.webp" alt="Shanxi Project case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.9</span>
+          </div>
+          <div class="case-body">
+            <h3>Shanxi Project</h3>
+            <p>Large-scale coating VOC treatment with rotor concentration and thermal oxidation.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Industrial Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>200,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Zeolite Rotor Concentrator + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="bell (nantong)" data-industry="equipment coating" data-route="dry filtration + catalytic oxidation (co)">
+          <div class="case-image">
+            <img src="images/cases/p10-bell-nantong.webp" alt="Bell (Nantong) case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.10</span>
+          </div>
+          <div class="case-body">
+            <h3>Bell (Nantong)</h3>
+            <p>Dry filtration and CO route for complex coating VOC components.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Equipment Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>80,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Dry Filtration + Catalytic Oxidation (CO)</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="suizhou changyue new energy" data-industry="new energy manufacturing" data-route="twin rotor + rto">
+          <div class="case-image">
+            <img src="images/cases/p11-suizhou-changyue-new-energy.webp" alt="Suizhou Changyue New Energy case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.11</span>
+          </div>
+          <div class="case-body">
+            <h3>Suizhou Changyue New Energy</h3>
+            <p>High-volume coating waste gas treatment for new energy production lines.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>New Energy Manufacturing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>340,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Twin Rotor + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="leading automotive company" data-industry="automotive painting workshop" data-route="zeolite rotor + rto">
+          <div class="case-image">
+            <img src="images/cases/p12-leading-automotive-company.webp" alt="Leading Automotive Company case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.12</span>
+          </div>
+          <div class="case-body">
+            <h3>Leading Automotive Company</h3>
+            <p>Large-scale VOC treatment system for automotive painting workshop emissions.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Automotive Painting Workshop</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>120,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Zeolite Rotor + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="shandong mining machinery group" data-industry="heavy machinery coating" data-route="dry filtration + ac adsorption &amp; desorption + co">
+          <div class="case-image">
+            <img src="images/cases/p13-shandong-mining-machinery-group.webp" alt="Shandong Mining Machinery Group case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.13</span>
+          </div>
+          <div class="case-body">
+            <h3>Shandong Mining Machinery Group</h3>
+            <p>Coating VOC treatment route for heavy industry emission control.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Heavy Machinery Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>40,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Dry Filtration + AC Adsorption &amp; Desorption + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="chongqing wangbian electric" data-industry="electrical equipment coating" data-route="dry filtration + activated carbon + catalytic oxidation">
+          <div class="case-image">
+            <img src="images/cases/p14-chongqing-wangbian-electric.webp" alt="Chongqing Wangbian Electric case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.14</span>
+          </div>
+          <div class="case-body">
+            <h3>Chongqing Wangbian Electric</h3>
+            <p>VOC purification for electrical equipment painting process.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Electrical Equipment Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>120,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Dry Filtration + Activated Carbon + Catalytic Oxidation</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="fuzhou byd" data-industry="spray coating" data-route="cyclone scrubber + filter box + carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p15-fuzhou-byd.webp" alt="Fuzhou BYD case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.15</span>
+          </div>
+          <div class="case-body">
+            <h3>Fuzhou BYD</h3>
+            <p>Pre-treatment plus adsorption and catalytic oxidation for spray coating exhaust.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Spray Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>100,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + Filter Box + Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="jinan byd" data-industry="fuel tank line coating" data-route="cyclone + filter + rto">
+          <div class="case-image">
+            <img src="images/cases/p16-jinan-byd.webp" alt="Jinan BYD case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.16</span>
+          </div>
+          <div class="case-body">
+            <h3>Jinan BYD</h3>
+            <p>Cyclonic scrubbing and thermal oxidation route for fuel tank coating exhaust.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Fuel Tank Line Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>60,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone + Filter + RTO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="coating" data-title="anhui kaile special vehicle" data-industry="special vehicle coating" data-route="filtering rotor + co">
+          <div class="case-image">
+            <img src="images/cases/p17-anhui-kaile-special-vehicle.webp" alt="Anhui Kaile Special Vehicle case study">
+            <span class="case-tag">Coating</span>
+            <span class="page-badge">PDF p.17</span>
+          </div>
+          <div class="case-body">
+            <h3>Anhui Kaile Special Vehicle</h3>
+            <p>Filtration and catalytic oxidation route for paint spraying VOCs.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Special Vehicle Coating</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>260,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Filtering Rotor + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="jiangxi gem recycling park" data-industry="waste plastic recycling" data-route="pneumatic cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p19-jiangxi-gem-recycling-park.webp" alt="Jiangxi GEM Recycling Park case study">
+            <span class="case-tag">Pelletizing</span>
+            <span class="page-badge">PDF p.19</span>
+          </div>
+          <div class="case-body">
+            <h3>Jiangxi GEM Recycling Park</h3>
+            <p>Multi-stage purification route for plastic pelletizing exhaust; 52 standardized systems.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Waste Plastic Recycling</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000–50,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Pneumatic Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="cgn juner (shanghai) new materials" data-industry="polymer modification" data-route="cyclone tower + esp + zeolite rotor + co; dust collector">
+          <div class="case-image">
+            <img src="images/cases/p20-cgn-juner-shanghai-new-materials.webp" alt="CGN Juner (Shanghai) New Materials case study">
+            <span class="case-tag">New Materials</span>
+            <span class="page-badge">PDF p.20</span>
+          </div>
+          <div class="case-body">
+            <h3>CGN Juner (Shanghai) New Materials</h3>
+            <p>Integrated gas and dust treatment for plastic modification pelletizing.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Polymer Modification</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>50,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Tower + ESP + Zeolite Rotor + CO; Dust Collector</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="guangzhou wanhongda group" data-industry="pe film recycling" data-route="two-stage cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p21-guangzhou-wanhongda-group.webp" alt="Guangzhou Wanhongda Group case study">
+            <span class="case-tag">Pelletizing</span>
+            <span class="page-badge">PDF p.21</span>
+          </div>
+          <div class="case-body">
+            <h3>Guangzhou Wanhongda Group</h3>
+            <p>High-volume treatment for PE film recycling pelletizing emissions.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>PE Film Recycling</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>80,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Two-stage Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="kingfa sci. &amp; tech. (jiangsu)" data-industry="polymer materials" data-route="cyclone scrubber + esp + filter box + adsorption &amp; desorption + co">
+          <div class="case-image">
+            <img src="images/cases/p22-kingfa-sci-tech-jiangsu.webp" alt="Kingfa Sci. &amp; Tech. (Jiangsu) case study">
+            <span class="case-tag">Pelletizing</span>
+            <span class="page-badge">PDF p.22</span>
+          </div>
+          <div class="case-body">
+            <h3>Kingfa Sci. &amp; Tech. (Jiangsu)</h3>
+            <p>Comprehensive route for pelletizing waste gas and particulates.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Polymer Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + ESP + Filter Box + Adsorption &amp; Desorption + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="korea project" data-industry="waste plastic recycling" data-route="pneumatic cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p23-korea-project.webp" alt="Korea Project case study">
+            <span class="case-tag">International</span>
+            <span class="page-badge">PDF p.23</span>
+          </div>
+          <div class="case-body">
+            <h3>Korea Project</h3>
+            <p>Integrated treatment route designed to meet strict Korean emission standards.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Waste Plastic Recycling</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Pneumatic Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="zhongzaishen (luoyang)" data-industry="pet bottle flake pelletizing" data-route="cyclone tower + esp + ac adsorption + co">
+          <div class="case-image">
+            <img src="images/cases/p24-zhongzaishen-luoyang.webp" alt="Zhongzaishen (Luoyang) case study">
+            <span class="case-tag">PET Recycling</span>
+            <span class="page-badge">PDF p.24</span>
+          </div>
+          <div class="case-body">
+            <h3>Zhongzaishen (Luoyang)</h3>
+            <p>Core unit for PET bottle flake granulation waste gas purification.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>PET Bottle Flake Pelletizing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Tower + ESP + AC Adsorption + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="a petrochemical project" data-industry="waste plastic pelletizing" data-route="pneumatic cyclone tower + esp + zeolite rotor + co">
+          <div class="case-image">
+            <img src="images/cases/p25-a-petrochemical-project.webp" alt="A Petrochemical Project case study">
+            <span class="case-tag">Petrochemical</span>
+            <span class="page-badge">PDF p.25</span>
+          </div>
+          <div class="case-body">
+            <h3>A Petrochemical Project</h3>
+            <p>Integrated treatment system for petrochemical plastic processing exhaust.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Waste Plastic Pelletizing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Pneumatic Cyclone Tower + ESP + Zeolite Rotor + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="shandong huachang rubber &amp; plastic" data-industry="rubber &amp; plastic processing" data-route="cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p26-shandong-huachang-rubber-plastic.webp" alt="Shandong Huachang Rubber &amp; Plastic case study">
+            <span class="case-tag">Rubber &amp; Plastic</span>
+            <span class="page-badge">PDF p.26</span>
+          </div>
+          <div class="case-body">
+            <h3>Shandong Huachang Rubber &amp; Plastic</h3>
+            <p>Plastic pelletizing exhaust control with VOCs and particulate treatment.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Rubber &amp; Plastic Processing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="jiangxi honghou new materials" data-industry="new materials" data-route="two-stage cyclone tower + esp + activated carbon">
+          <div class="case-image">
+            <img src="images/cases/p27-jiangxi-honghou-new-materials.webp" alt="Jiangxi Honghou New Materials case study">
+            <span class="case-tag">Pelletizing</span>
+            <span class="page-badge">PDF p.27</span>
+          </div>
+          <div class="case-body">
+            <h3>Jiangxi Honghou New Materials</h3>
+            <p>Pelletizing oil fume treatment for new material production.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>New Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Two-stage Cyclone Tower + ESP + Activated Carbon</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="fujian paper mill material" data-industry="paper recycling / granulation" data-route="condensation + cyclone tower + esp + activated carbon">
+          <div class="case-image">
+            <img src="images/cases/p28-fujian-paper-mill-material.webp" alt="Fujian Paper Mill Material case study">
+            <span class="case-tag">Paper-Plastic</span>
+            <span class="page-badge">PDF p.28</span>
+          </div>
+          <div class="case-body">
+            <h3>Fujian Paper Mill Material</h3>
+            <p>Compact vertical layout for paper-plastic granulation exhaust.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Paper Recycling / Granulation</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Condensation + Cyclone Tower + ESP + Activated Carbon</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="japan project" data-industry="waste plastic recycling" data-route="cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p29-japan-project.webp" alt="Japan Project case study">
+            <span class="case-tag">International</span>
+            <span class="page-badge">PDF p.29</span>
+          </div>
+          <div class="case-body">
+            <h3>Japan Project</h3>
+            <p>Integrated system for waste plastic pelletizing exhaust in Japan.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Waste Plastic Recycling</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="henan xinxiang paper mill material" data-industry="paper mill material pelletizing" data-route="condensation + cyclone tower + esp + catalytic oxidation">
+          <div class="case-image">
+            <img src="images/cases/p30-henan-xinxiang-paper-mill-material.webp" alt="Henan Xinxiang Paper Mill Material case study">
+            <span class="case-tag">Paper-Plastic</span>
+            <span class="page-badge">PDF p.30</span>
+          </div>
+          <div class="case-body">
+            <h3>Henan Xinxiang Paper Mill Material</h3>
+            <p>Compact integrated route for high-humidity and particulate-rich pelletizing exhaust.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Paper Mill Material Pelletizing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Condensation + Cyclone Tower + ESP + Catalytic Oxidation</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="linyi jinjia plastic industry" data-industry="washed film pelletizing" data-route="condensation + cyclone tower + esp + catalytic oxidation">
+          <div class="case-image">
+            <img src="images/cases/p31-linyi-jinjia-plastic-industry.webp" alt="Linyi Jinjia Plastic Industry case study">
+            <span class="case-tag">Washed Film</span>
+            <span class="page-badge">PDF p.31</span>
+          </div>
+          <div class="case-body">
+            <h3>Linyi Jinjia Plastic Industry</h3>
+            <p>Treatment route for washed film pelletizing waste gas with odor and particles.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Washed Film Pelletizing</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Condensation + Cyclone Tower + ESP + Catalytic Oxidation</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="hunan xiangtan paper mill material" data-industry="paper scrap plastic granulation" data-route="condensation + cyclone tower + esp + catalytic oxidation">
+          <div class="case-image">
+            <img src="images/cases/p32-hunan-xiangtan-paper-mill-material.webp" alt="Hunan Xiangtan Paper Mill Material case study">
+            <span class="case-tag">Paper-Plastic</span>
+            <span class="page-badge">PDF p.32</span>
+          </div>
+          <div class="case-body">
+            <h3>Hunan Xiangtan Paper Mill Material</h3>
+            <p>Customized system for granulation waste gas with organic compounds and particulates.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Paper Scrap Plastic Granulation</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>20,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Condensation + Cyclone Tower + ESP + Catalytic Oxidation</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="gem (wuxi) energy materials" data-industry="energy materials" data-route="cyclone scrubber + esp + filter box + adsorption &amp; desorption + co">
+          <div class="case-image">
+            <img src="images/cases/p33-gem-wuxi-energy-materials.webp" alt="GEM (Wuxi) Energy Materials case study">
+            <span class="case-tag">Energy Materials</span>
+            <span class="page-badge">PDF p.33</span>
+          </div>
+          <div class="case-body">
+            <h3>GEM (Wuxi) Energy Materials</h3>
+            <p>Integrated oil fume treatment for sustainable energy material production.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Energy Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + ESP + Filter Box + Adsorption &amp; Desorption + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="yuyao jiuzhou electric appliance" data-industry="electrical components" data-route="cyclone scrubber + esp + filter box + activated carbon">
+          <div class="case-image">
+            <img src="images/cases/p34-yuyao-jiuzhou-electric-appliance.webp" alt="Yuyao Jiuzhou Electric Appliance case study">
+            <span class="case-tag">ABS Pelletizing</span>
+            <span class="page-badge">PDF p.34</span>
+          </div>
+          <div class="case-body">
+            <h3>Yuyao Jiuzhou Electric Appliance</h3>
+            <p>ABS pelletizing exhaust system with dust and odor control modules.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Electrical Components</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>10,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + ESP + Filter Box + Activated Carbon</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="shanghai pulete composite materials" data-industry="advanced polymer materials" data-route="two-stage spray + activated carbon + co; pulse cartridge collector">
+          <div class="case-image">
+            <img src="images/cases/p35-shanghai-pulete-composite-materials.webp" alt="Shanghai Pulete Composite Materials case study">
+            <span class="case-tag">New Materials</span>
+            <span class="page-badge">PDF p.35</span>
+          </div>
+          <div class="case-body">
+            <h3>Shanghai Pulete Composite Materials</h3>
+            <p>VOCs and production dust treatment for plastic modification pelletizing.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Advanced Polymer Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>60,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Two-stage Spray + Activated Carbon + CO; Pulse Cartridge Collector</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="qingdao hongdingyuan new materials" data-industry="polymer new materials" data-route="cyclone scrubber + esp + filter box + carbon desorption + co">
+          <div class="case-image">
+            <img src="images/cases/p36-qingdao-hongdingyuan-new-materials.webp" alt="Qingdao Hongdingyuan New Materials case study">
+            <span class="case-tag">New Materials</span>
+            <span class="page-badge">PDF p.36</span>
+          </div>
+          <div class="case-body">
+            <h3>Qingdao Hongdingyuan New Materials</h3>
+            <p>Standardized system for pelletizing waste gas treatment and compliance.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Polymer New Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + ESP + Filter Box + Carbon Desorption + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="shanxi yanchang jingwei new materials" data-industry="new materials" data-route="dust collection + cyclone tower + esp + activated carbon + co">
+          <div class="case-image">
+            <img src="images/cases/p37-shanxi-yanchang-jingwei-new-materials.webp" alt="Shanxi Yanchang Jingwei New Materials case study">
+            <span class="case-tag">New Materials</span>
+            <span class="page-badge">PDF p.37</span>
+          </div>
+          <div class="case-body">
+            <h3>Shanxi Yanchang Jingwei New Materials</h3>
+            <p>Dual-system purification route for pelletizing waste gas and particles.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>New Materials</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>40,000 / 30,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Dust Collection + Cyclone Tower + ESP + Activated Carbon + CO</span></div>
+          </div>
+        </article>
+        <article class="case-card reveal" data-category="pelletizing" data-title="foshan shunde xinhuanbao" data-industry="resource recycling" data-route="cyclone scrubber + industrial esp + dry filter box + ac adsorption &amp; co">
+          <div class="case-image">
+            <img src="images/cases/p38-foshan-shunde-xinhuanbao.webp" alt="Foshan Shunde Xinhuanbao case study">
+            <span class="case-tag">Resource Recycling</span>
+            <span class="page-badge">PDF p.38</span>
+          </div>
+          <div class="case-body">
+            <h3>Foshan Shunde Xinhuanbao</h3>
+            <p>Integrated oil fume waste gas treatment for resource recycling production.</p>
+            <div class="case-meta">
+              <div class="meta-box"><small>Industry</small><b>Resource Recycling</b></div>
+              <div class="meta-box"><small>Air Volume</small><b>10,000 m³/h</b></div>
+            </div>
+            <div class="route-line"><small>Route</small><span>Cyclone Scrubber + Industrial ESP + Dry Filter Box + AC Adsorption &amp; CO</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div id="emptyState" class="hidden mt-12 rounded-[2rem] border border-line bg-soft p-10 text-center">
+        <h3 class="text-2xl font-black tracking-[-.04em]">No matching cases found.</h3>
+        <p class="mt-3 text-gray-600">Try another client name, industry or process route.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-soft py-24">
+    <div class="mx-auto grid max-w-[1420px] gap-8 px-5 lg:grid-cols-[.9fr_1.1fr] lg:items-start lg:px-8">
+      <div class="reveal">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyGreenDark">Regular Update Structure</p>
+        <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl">Built as a maintainable library.</h2>
+      </div>
+      <div class="update-card reveal">
+        <h3 class="text-2xl font-black tracking-[-.04em]">Recommended update workflow</h3>
+        <p class="mt-4 leading-8 text-gray-600">When new cases are added, keep the same neat card structure: client, industry, air volume, route, short summary and one project image. This keeps the page clean even as the case library grows.</p>
+        <code>Update fields:
+- Client / Project name
+- Industry category
+- Air volume
+- Process route
+- 1-sentence summary
+- Project image or PDF page thumbnail</code>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band py-24 text-white">
+    <div class="mx-auto grid max-w-[1420px] gap-10 px-5 lg:grid-cols-[.95fr_1.05fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyGreen">Talk to Engineers</p>
+        <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl">Want a route similar to these projects?</h2>
+        <p class="mt-10 max-w-2xl text-lg leading-8 text-white/76">Send your industry, air volume, gas type and project target. KangYu EnTech will help match the treatment route.</p>
+        <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+          <a href="contact.html" class="magnetic inline-flex justify-center rounded-full bg-white px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-kyNavy transition hover:bg-kyGreen">Send Project Data</a>
+          <a href="solutions.html" class="magnetic inline-flex justify-center rounded-full border border-white/25 px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-white transition hover:bg-white hover:text-kyNavy">View Solutions</a>
+        </div>
+      </div>
+      <div class="reveal rounded-[2rem] bg-white/8 p-5 ring-1 ring-white/12">
+        <img src="images/cases/p20-cgn-juner-shanghai-new-materials.webp" alt="Project installation reference" class="h-[360px] w-full rounded-[1.5rem] object-cover">
+      </div>
+    </div>
+  </section>
+
+  <div class="fixed bottom-6 right-5 z-50 lg:bottom-8 lg:right-8">
+    <div id="assistantPanel" class="assistant-panel mb-4 w-[310px] rounded-[1.6rem] border border-line bg-white p-5 shadow-soft">
+      <div class="mb-4 flex items-center gap-3">
+        <img src="images/k-mark.png" alt="KangYu K assistant" class="h-10 w-10 object-contain">
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-[.18em] text-kyGreenDark">K Assistant</p>
+          <h3 class="text-lg font-black tracking-[-.03em] text-ink">Case Route Help</h3>
+        </div>
+      </div>
+      <p class="text-sm leading-6 text-gray-600">Tell us your industry and gas condition. We can match a route based on similar cases.</p>
+      <div class="mt-5 grid gap-3">
+        <a href="contact.html" class="assistant-link">Send Project Data →</a>
+        <a href="solutions.html#coating" class="assistant-link">Coating Route →</a>
+        <a href="solutions.html#pelletizing" class="assistant-link">Pelletizing Route →</a>
+      </div>
+    </div>
+    <button id="assistantBtn" class="k-pulse grid h-16 w-16 place-items-center rounded-full bg-white shadow-brand ring-1 ring-kyBlue/20 transition hover:scale-105" aria-label="Open KangYu assistant">
+      <img src="images/k-mark.png" alt="KangYu K mark" class="h-11 w-11 object-contain">
+    </button>
+  </div>
+
+  <footer class="relative overflow-hidden bg-kyNavy text-white">
+    <div class="footer-orbit hidden lg:block"></div>
+    <div class="h-1.5 w-full bg-gradient-to-r from-kyBlue via-kyBlue to-kyGreen"></div>
+    <div class="mx-auto grid max-w-[1420px] gap-10 px-5 py-16 lg:grid-cols-[1.18fr_.78fr_.82fr_1fr] lg:px-8">
+      <div>
+        <div class="brand-lockup">
+          <img src="images/k-mark.png" alt="KangYu K mark" class="brand-k" />
+          <span class="brand-script on-dark">
+            <span class="kangyu">KANGYU</span><span class="entech">ENTECH</span>
+          </span>
+        </div>
+        <p class="mt-6 max-w-md text-sm leading-7 text-white/78">Industrial air and waste gas treatment systems focused on fast understanding: custom engineering, proven installations, and stable delivery for VOCs, dust, odor and oil mist.</p>
+        <div class="mt-5 flex flex-wrap gap-2 footer-mini">
+          <span class="value-pill !bg-white/95 !text-kyNavy">20+ Years</span>
+          <span class="value-pill !bg-white/95 !text-kyNavy">34+ Case References</span>
+          <span class="value-pill !bg-white/95 !text-kyNavy">Turnkey Support</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="cert-badge" aria-label="ISO certification">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2.2"/><text x="20" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">ISO</text></svg>
+            <span>ISO</span>
+          </span>
+          <span class="cert-badge" aria-label="CE conformity">
+            <svg viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 8a12 12 0 100 24" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M38 8H28m10 12H28m10 12H28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            <span>CE</span>
+          </span>
+          <span class="cert-badge">Turnkey Systems</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="social-btn" href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+          <a class="social-btn" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="social-btn" href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+        </div>
+      </div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Products</h4><div class="mt-5 flex flex-col gap-3 text-sm text-white/72"><a class="interactive-link hover:text-white" href="products.html#zeolite-rto">Zeolite Rotor + RTO</a><a class="interactive-link hover:text-white" href="products.html#rto">RTO System</a><a class="interactive-link hover:text-white" href="products.html#esp">High-Voltage ESP</a><a class="interactive-link hover:text-white" href="products.html#activated-carbon">Activated Carbon</a><a class="interactive-link hover:text-white" href="products.html#scrubber">Cyclonic Scrubber</a></div></div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Quick Links</h4><div class="mt-5 flex flex-col gap-3 text-sm text-white/72"><a class="interactive-link hover:text-white" href="about.html">About Us</a><a class="interactive-link hover:text-white" href="solutions.html">Solutions</a><a class="interactive-link hover:text-white" href="industries.html">Industries</a><a class="interactive-link hover:text-white" href="projects.html">Case Studies</a><a class="interactive-link hover:text-white" href="service.html">Service</a><a class="interactive-link hover:text-white" href="faq.html">FAQ</a><a class="interactive-link hover:text-white" href="contact.html">Contact</a><span>EN / ES / RU</span></div></div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Contact</h4><div class="mt-5 space-y-3 text-sm leading-7 text-white/72"><p><b class="text-white">Jiangsu KangYu Environmental Protection Technology Co., Ltd.</b></p><p>16 Limin Road, Louwang Town, Yancheng City, Jiangsu Province 224031, China</p><p>Tel: <a class="interactive-link hover:text-white" href="tel:+8651588663333">+86-515-8866 3333</a><br>Email: <a class="interactive-link hover:text-white" href="mailto:lvkang@jskyep.com">lvkang@jskyep.com</a><br>Web: <a class="interactive-link hover:text-white" href="https://www.jskyep.com" target="_blank" rel="noreferrer">www.jskyep.com</a></p></div></div>
+    </div>
+    <div class="border-t border-white/10"><div class="mx-auto flex max-w-[1420px] flex-col gap-4 px-5 py-6 text-xs text-white/58 lg:flex-row lg:items-center lg:justify-between lg:px-8"><p>© 2026 KangYu EnTech. All rights reserved.</p><p>Industrial emission control · VOCs treatment · Dust removal · Odor purification</p></div></div>
+  </footer>
+
+  <script>
+    const i18n = {
+      en: {
+        nav_about:'About', nav_solutions:'Solutions', nav_projects:'Products', nav_industries:'Industries', nav_cases:'Cases', nav_faq:'FAQ', nav_contact:'Contact',
+        talk:'Talk to Us',
+        hero_eyebrow:'Case Library', hero_title:'All coating and pelletizing exhaust cases in one library.', hero_text:'A regularly updated case library for coating VOCs, plastic/rubber pelletizing fumes, oil mist, odor and integrated treatment systems.'
+      },
+      es: {
+        nav_about:'Empresa', nav_solutions:'Soluciones', nav_projects:'Productos', nav_industries:'Industrias', nav_cases:'Casos', nav_faq:'FAQ', nav_contact:'Contacto',
+        talk:'Hable con nosotros',
+        hero_eyebrow:'Biblioteca de casos', hero_title:'Todos los casos de recubrimiento y granulación en una biblioteca.', hero_text:'Biblioteca actualizable para COV de recubrimiento, humos de granulación de plástico/caucho, niebla de aceite, olores y sistemas integrados.'
+      },
+      ru: {
+        nav_about:'О компании', nav_solutions:'Решения', nav_projects:'Продукты', nav_industries:'Отрасли', nav_cases:'Кейсы', nav_faq:'FAQ', nav_contact:'Контакты',
+        talk:'Связаться',
+        hero_eyebrow:'Библиотека кейсов', hero_title:'Все кейсы окраски и грануляции в одной библиотеке.', hero_text:'Обновляемая библиотека для ЛОС окраски, газов грануляции пластика/резины, масляного тумана, запахов и комплексных систем.'
+      }
+    };
+
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    function setLanguage(lang){
+      const dict = i18n[lang] || i18n.en;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if(dict[key]) el.textContent = dict[key];
+      });
+      document.querySelectorAll('.lang-option').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+      localStorage.setItem('kangyuLang', lang);
+    }
+    document.querySelectorAll('.lang-option').forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
+    setLanguage(localStorage.getItem('kangyuLang') || 'en');
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+    }, { threshold:.13 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const scrollProgress = document.getElementById('scrollProgress');
+    function updateScrollProgress(){
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const p = h > 0 ? window.scrollY / h : 0;
+      if(scrollProgress) scrollProgress.style.transform = `scaleX(${p})`;
+    }
+    updateScrollProgress();
+    window.addEventListener('scroll', updateScrollProgress, {passive:true});
+
+    const assistantBtn = document.getElementById('assistantBtn');
+    const assistantPanel = document.getElementById('assistantPanel');
+    assistantBtn?.addEventListener('click', () => assistantPanel?.classList.toggle('open'));
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = Array.from(document.querySelectorAll('.case-card'));
+    const searchInput = document.getElementById('caseSearch');
+    const emptyState = document.getElementById('emptyState');
+    let activeFilter = 'all';
+
+    function applyCaseFilter(){
+      const query = (searchInput?.value || '').trim().toLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const categoryMatch = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const text = `${card.dataset.title} ${card.dataset.industry} ${card.dataset.route}`;
+        const searchMatch = !query || text.includes(query);
+        const show = categoryMatch && searchMatch;
+        card.classList.toggle('hidden-case', !show);
+        if(show) visible++;
+      });
+      emptyState?.classList.toggle('hidden', visible !== 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.filter;
+        filterBtns.forEach(b => b.classList.toggle('active', b === btn));
+        applyCaseFilter();
+      });
+    });
+    searchInput?.addEventListener('input', applyCaseFilter);
+  </script>
+</body>
+</html>

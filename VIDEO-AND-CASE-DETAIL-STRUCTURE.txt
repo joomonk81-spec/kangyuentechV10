@@ -1,0 +1,24 @@
+Recommended structure for future media:
+
+/cases/
+  zhengzhou-byd-coating-exhaust.html
+  case-detail-template.html
+
+/images/cases/
+  p04-zhengzhou-byd.webp
+  future-case-detail-folders-or-gallery-images.webp
+
+/videos/products/
+  rto-system-3d-animation.mp4
+  zeolite-rotor-rto-3d-animation.mp4
+  high-voltage-esp-working-principle.mp4
+
+/videos/cases/
+  zhengzhou-byd-coating-exhaust/
+    installation-video.mp4
+    operation-video.mp4
+    effect-video.mp4
+
+Use projects.html as the case library list.
+Use cases/*.html for individual case proof pages.
+Use product detail pages for 3D animation / working principle windows.

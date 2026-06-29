@@ -1,0 +1,43 @@
+KangYu EnTech Full Site Check Report
+
+Generated package folder:
+/mnt/data/kangyu-entech-full-website
+
+Pages included:
+17 HTML files
+- 9 root pages
+- 8 product detail pages
+
+Assets included:
+- 62 image files
+- 34 case thumbnails
+- case-library-data.json: YES
+
+Content / structure updates applied:
+1. solutions-process-route.html is used as the official solutions.html in the final package.
+2. Footer is unified across root pages.
+3. Product detail page footers are updated with correct ../ relative paths.
+4. Footer Quick Links include Service and Industries.
+5. Service is kept out of the main navigation to avoid overcrowding, but linked from footer and related pages.
+6. Static site only; no backend, CMS or database.
+
+Integrity check:
+- Missing local image references: 0
+- Broken local page/file links: 0
+- Pages missing K assistant: 0
+- Pages missing footer: 0
+
+Missing image details:
+None
+
+Broken link details:
+None
+
+Pages missing K assistant:
+None
+
+Pages missing footer:
+None
+
+Recommended next manual check:
+Open index.html locally and click through main navigation, product cards, case cards and contact form layout.

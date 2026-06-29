@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | KangYu EnTech</title>
+  <meta name="description" content="KangYu EnTech product overview: RTO, zeolite rotor + RTO, ESP, scrubber, activated carbon, dust collector, filter box and CO furnace for industrial exhaust gas treatment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kyBlue: '#0078BE',
+            kyBlueDark: '#004C8C',
+            kyGreen: '#8CC63F',
+            kyGreenDark: '#6AAE23',
+            kyNavy: '#082D4F',
+            ink: '#111827',
+            soft: '#F5F9FB',
+            line: '#E3E8EE',
+            warm: '#F9FBF6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 24px 70px rgba(8,45,79,.08)',
+            card: '0 12px 38px rgba(8,45,79,.08)',
+            brand: '0 18px 44px rgba(0,120,190,.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --blue:#0078BE; --green:#8CC63F; --navy:#082D4F; --ink:#111827; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,sans-serif; color:var(--ink); background:#fff; overflow-x:hidden; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+    .brand-lockup { display:flex; align-items:center; gap:12px; }
+    .brand-k { width:54px; height:54px; object-fit:contain; filter:drop-shadow(0 8px 18px rgba(0,120,190,.18)); }
+    .brand-script { display:flex; align-items:baseline; gap:0; font-weight:900; font-size:25px; line-height:1; letter-spacing:.025em; white-space:nowrap; text-transform:uppercase; }
+    .brand-script .kangyu { color:var(--green); }
+    .brand-script .entech { color:var(--blue); }
+    .brand-script.on-dark .kangyu { color:#9EDB46; }
+    .brand-script.on-dark .entech { color:#42BAFF; }
+
+    .brand-line { position:relative; }
+    .brand-line::after { content:""; position:absolute; left:0; bottom:-15px; width:150px; height:5px; border-radius:999px; background:linear-gradient(90deg,var(--blue) 0 52%,transparent 52% 60%,var(--green) 60%); }
+    .section-k { position:relative; isolation:isolate; }
+    .section-k::before { content:"K"; position:absolute; right:4%; top:3%; font-size:min(18vw,210px); line-height:1; font-weight:900; color:rgba(0,120,190,.035); z-index:-1; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .72s ease, transform .72s ease; }
+    .reveal.show { opacity:1; transform:translateY(0); }
+    .scroll-progress { transform-origin:left center; transform:scaleX(0); transition:transform .12s linear; }
+
+    .nav-item { position:relative; }
+    .nav-parent { display:inline-flex; align-items:center; gap:6px; padding:26px 0; }
+    .nav-parent::after { content:'▾'; font-size:10px; opacity:.68; transform:translateY(-1px); }
+    .mega-panel { position:fixed; left:0; right:0; top:82px; width:100%; border-top:1px solid rgba(17,24,39,.10); background:rgba(255,255,255,.96); color:#111827; box-shadow:0 30px 80px rgba(8,45,79,.14); opacity:0; transform:translateY(10px); pointer-events:none; transition:opacity .22s ease, transform .22s ease; backdrop-filter:blur(18px); }
+    .nav-item:hover .mega-panel { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .mega-inner { max-width:1420px; margin:0 auto; display:grid; grid-template-columns:minmax(300px,430px) 1fr; gap:46px; padding:34px 32px 38px; }
+    .mega-image { position:relative; overflow:hidden; border-radius:2px; min-height:218px; background:#F5F9FB; }
+    .mega-image img { width:100%; height:100%; min-height:218px; object-fit:cover; display:block; transition:transform .55s ease; }
+    .nav-item:hover .mega-image img { transform:scale(1.035); }
+    .mega-caption { position:absolute; left:22px; bottom:20px; right:22px; color:#fff; text-shadow:0 6px 22px rgba(0,0,0,.55); }
+    .mega-caption p { font-size:12px; font-weight:900; letter-spacing:.22em; text-transform:uppercase; color:#9EDB46; }
+    .mega-caption h3 { margin-top:8px; font-size:28px; font-weight:900; letter-spacing:-.03em; }
+    .mega-list { display:grid; grid-template-columns:repeat(2,minmax(220px,1fr)); gap:2px 44px; border-left:1px solid #E3E8EE; padding-left:46px; align-content:start; }
+    .mega-link { display:block; padding:14px 0; border-bottom:1px solid #E3E8EE; font-size:20px; font-weight:600; letter-spacing:-.02em; color:#646B73; transition:.2s ease; }
+    .mega-link:hover { color:var(--blue); padding-left:10px; }
+    .mega-link small { display:block; margin-top:5px; font-size:11px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; color:#9aa3ad; }
+
+    .lang-menu { opacity:0; transform:translateY(8px); pointer-events:none; transition:.22s ease; }
+    .lang-wrap:hover .lang-menu { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .globe-btn { width:44px; height:44px; display:grid; place-items:center; border-radius:999px; border:1px solid rgba(17,24,39,.12); background:#fff; color:#111827; transition:.24s ease; }
+    .globe-btn:hover { transform:translateY(-2px) rotate(-8deg); box-shadow:0 14px 32px rgba(0,120,190,.18); }
+    .lang-option.active { background:#F5F9FB; color:var(--blue); }
+
+    .hero-bg { background:
+      radial-gradient(circle at 70% 20%, rgba(140,198,63,.13), transparent 28%),
+      linear-gradient(135deg,#F5F9FB 0%, #fff 48%, #EEF7FB 100%);
+    }
+    .category-pill { border:1px solid #DDE7EE; border-radius:999px; background:#fff; padding:12px 18px; font-size:12px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; color:#082D4F; transition:.22s ease; }
+    .category-pill:hover { background:#082D4F; color:#fff; transform:translateY(-2px); box-shadow:0 18px 44px rgba(8,45,79,.12); }
+
+    .product-card { position:relative; overflow:hidden; display:flex; flex-direction:column; min-height:565px; border:1px solid #DDE7EE; border-radius:2rem; background:#fff; color:#111827; box-shadow:0 16px 42px rgba(8,45,79,.07); transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+    .product-card::before { content:""; position:absolute; inset:0; border-radius:inherit; border:0 solid #082D4F; pointer-events:none; transition:border-width .22s ease, box-shadow .22s ease; z-index:3; }
+    .product-card:hover { transform:translateY(-7px); border-color:#082D4F; box-shadow:0 28px 70px rgba(8,45,79,.18); }
+    .product-card:hover::before { border-width:4px; box-shadow:inset 0 0 0 1px rgba(0,120,190,.22); }
+    .product-tag { align-self:flex-start; margin:24px 24px 0; border:1px solid rgba(0,120,190,.22); background:#F5F9FB; color:#082D4F; border-radius:999px; padding:8px 15px; font-size:11px; font-weight:900; letter-spacing:.16em; text-transform:uppercase; }
+    .product-media { display:grid; place-items:center; min-height:230px; margin:24px 24px 0; border-radius:1.4rem; background:#fff; }
+    .product-media img { max-width:88%; max-height:210px; object-fit:contain; transition:transform .35s ease; }
+    .product-card:hover .product-media img { transform:scale(1.035); }
+    .product-body { padding:24px; display:flex; flex:1; flex-direction:column; }
+    .product-link { margin-top:auto; display:inline-flex; align-items:center; gap:10px; color:#0078BE; font-size:12px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+    .product-link span { transition:transform .2s ease; }
+    .product-card:hover .product-link span { transform:translateX(4px); }
+
+    .selection-card { border:1px solid #E3E8EE; border-radius:1.8rem; background:#fff; padding:28px; box-shadow:0 12px 38px rgba(8,45,79,.06); transition:.24s ease; }
+    .selection-card:hover { transform:translateY(-5px); border-color:rgba(0,120,190,.32); box-shadow:0 22px 54px rgba(8,45,79,.10); }
+    .number-dot { width:42px; height:42px; display:grid; place-items:center; border-radius:999px; background:linear-gradient(135deg,var(--blue),var(--green)); color:#fff; font-weight:900; }
+
+    .compare-table { overflow:hidden; border:1px solid #E3E8EE; border-radius:2rem; background:#fff; box-shadow:0 16px 50px rgba(8,45,79,.07); }
+    .compare-table table { width:100%; border-collapse:collapse; }
+    .compare-table th { background:#082D4F; color:#fff; text-align:left; padding:20px 24px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; }
+    .compare-table td { padding:22px 24px; border-top:1px solid #E3E8EE; vertical-align:top; color:#4B5563; }
+    .compare-table td:first-child { font-weight:900; color:#111827; }
+
+    .cta-band { background:linear-gradient(135deg,#082D4F 0%, #0B4777 65%, #0078BE 100%); }
+    .magnetic { transition:transform .18s ease, box-shadow .25s ease, background .25s ease, color .25s ease; }
+    .interactive-link { position:relative; }
+    .interactive-link::after { content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; border-radius:999px; background:linear-gradient(90deg,var(--blue),var(--green)); transition:width .24s ease; }
+    .interactive-link:hover::after { width:100%; }
+
+
+    .assistant-panel { 
+      opacity:0; 
+      transform:translateY(14px) scale(.98); 
+      pointer-events:none; 
+      transition:.25s ease; 
+    }
+    .assistant-panel.open { 
+      opacity:1; 
+      transform:translateY(0) scale(1); 
+      pointer-events:auto; 
+    }
+    .k-pulse { 
+      box-shadow:0 0 0 0 rgba(140,198,63,.34); 
+      animation:kPulse 2.4s infinite; 
+    }
+    @keyframes kPulse { 
+      0% { box-shadow:0 0 0 0 rgba(140,198,63,.34); } 
+      70% { box-shadow:0 0 0 14px rgba(140,198,63,0); } 
+      100% { box-shadow:0 0 0 0 rgba(140,198,63,0); } 
+    }
+    .assistant-link { 
+      display:block; 
+      border-radius:18px; 
+      background:#F5F9FB; 
+      padding:14px 16px; 
+      font-size:14px; 
+      font-weight:800; 
+      color:#111827; 
+      transition:.2s ease; 
+    }
+    .assistant-link:hover { 
+      background:#082D4F; 
+      color:#fff; 
+      transform:translateY(-2px); 
+    }
+
+    @media (max-width:1023px) {
+      .mega-panel { display:none; }
+      .brand-script { font-size:20px; }
+      .brand-k { width:46px; height:46px; }
+    }
+    @media (prefers-reduced-motion:reduce) { .reveal,.k-pulse { animation:none!important; transition:none!important; transform:none!important; opacity:1!important; } }
+  
+.footer-orbit{position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+.cert-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;color:#fff;background:rgba(255,255,255,.06)}
+.cert-badge svg{width:22px;height:22px}
+.social-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:9px 12px;font-size:12px;font-weight:900;color:#fff;background:rgba(255,255,255,.06);transition:.2s ease}
+.social-btn:hover{background:#fff;color:#082D4F}
+.value-pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#F5F9FB;color:#082D4F;padding:8px 12px;font-size:12px;font-weight:900;letter-spacing:.08em}
+
+</style>
+</head>
+<body>
+  <svg aria-hidden="true" class="hidden">
+    <symbol id="i-globe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM3.6 9h16.8M3.6 15h16.8M12 3c2.1 2.3 3.2 5.3 3.2 9S14.1 18.7 12 21M12 3C9.9 5.3 8.8 8.3 8.8 12s1.1 6.7 3.2 9"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6zm0 1l8 6 8-6"/></symbol>
+  </svg>
+
+  <header id="siteHeader" class="fixed inset-x-0 top-0 z-50 bg-white/95 shadow-card backdrop-blur-md transition-all duration-300">
+    <div class="mx-auto flex h-20 max-w-[1420px] items-center justify-between px-5 lg:px-8">
+      <a href="index.html" class="brand-lockup" aria-label="KangYu EnTech Home">
+        <img src="images/k-mark.png" alt="KangYu K mark" class="brand-k" />
+        <span class="brand-script"><span class="kangyu">KANGYU</span><span class="entech">ENTECH</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-[13px] font-extrabold uppercase tracking-[.14em] text-ink lg:flex" id="desktopNav">
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="about.html" data-i18n="nav_about">About</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/hero-rto-line.webp" alt="KangYu capability"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>About Us</p><h3>KangYu EnTech</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="about.html#company">Company Profile<small>Who we are</small></a>
+                <a class="mega-link" href="about.html#history">History<small>Development path</small></a>
+                <a class="mega-link" href="about.html#rd">R&amp;D Innovation<small>Engineering capability</small></a>
+                <a class="mega-link" href="about.html#manufacturing">Manufacturing Base<small>Factory and quality</small></a>
+                <a class="mega-link" href="about.html#news">News<small>Company updates</small></a>
+                <a class="mega-link" href="about.html#certificates">Certificates<small>ISO / CE / compliance</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/case-shenzhen-byd.webp" alt="Integrated solution"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>Solution Logic</p><h3>From gas source to discharge</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="solutions.html#voc">VOC Treatment<small>RTO / rotor / carbon</small></a>
+                <a class="mega-link" href="solutions.html#dust">Dust &amp; Oil Mist<small>ESP / filtration</small></a>
+                <a class="mega-link" href="solutions.html#odor">Odor Control<small>Multi-stage purification</small></a>
+                <a class="mega-link" href="solutions.html#pretreatment">Pre-treatment<small>Scrubber / filter protection</small></a>
+                <a class="mega-link" href="solutions.html#integration">System Integration<small>Process route design</small></a>
+                <a class="mega-link" href="solutions.html#afterservice">Operation Support<small>Installation guidance</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition text-kyBlue hover:text-kyGreen" href="products.html" data-i18n="nav_projects">Products</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/product-zeolite-rto.webp" alt="Core products"><div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent"></div><div class="mega-caption"><p>Core Products</p><h3>Equipment for complex lines</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="products/zeolite-rotor-rto.html">Zeolite Rotor + RTO<small>High-volume VOC streams</small></a>
+                <a class="mega-link" href="products/rto-system.html">RTO System<small>Thermal oxidation</small></a>
+                <a class="mega-link" href="products/high-voltage-esp.html">High-Voltage ESP<small>Oil mist / smoke</small></a>
+                <a class="mega-link" href="products/cyclonic-scrubber.html">Cyclonic Scrubber<small>Wet pre-treatment</small></a>
+                <a class="mega-link" href="products/activated-carbon.html">Activated Carbon<small>Adsorption / desorption</small></a>
+                <a class="mega-link" href="products/dust-collector.html">Dust Collector<small>Pulse-jet filtration</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-parent transition hover:text-kyGreen" href="industries.html" data-i18n="nav_industries">Industries</a>
+          <div class="mega-panel">
+            <div class="mega-inner">
+              <div class="mega-image"><img src="images/case-jinan-byd.webp" alt="Industrial applications"><div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div><div class="mega-caption"><p>Industries</p><h3>Designed around production</h3></div></div>
+              <div class="mega-list">
+                <a class="mega-link" href="industries.html#automotive">Automotive &amp; Coating<small>Paint mist / VOCs</small></a>
+                <a class="mega-link" href="industries.html#recycling">Plastic Recycling<small>Granulation fumes</small></a>
+                <a class="mega-link" href="industries.html#machinery">Machinery Manufacturing<small>Dust / oil mist</small></a>
+                <a class="mega-link" href="industries.html#new-materials">New Materials<small>Complex VOC treatment</small></a>
+                <a class="mega-link" href="industries.html#energy">Energy &amp; Power<small>Process emissions</small></a>
+                <a class="mega-link" href="industries.html#odor">Food &amp; Odor Control<small>Odorous exhaust</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="transition hover:text-kyGreen" href="projects.html" data-i18n="nav_cases">Cases</a>
+        <a class="transition hover:text-kyGreen" href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a class="transition hover:text-kyGreen" href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="hidden items-center gap-3 lg:flex">
+        <div class="lang-wrap relative">
+          <button class="globe-btn" id="langBtn" aria-label="Language selector" title="Language"><svg class="h-5 w-5"><use href="#i-globe"/></svg></button>
+          <div class="lang-menu absolute right-0 top-12 w-48 rounded-2xl border border-black/10 bg-white p-2 text-sm font-semibold text-ink shadow-card">
+            <button class="lang-option active flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="en"><span>English</span><span class="text-xs text-kyBlue">EN</span></button>
+            <button class="lang-option flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="es"><span>Español</span><span class="text-xs text-kyBlue">ES</span></button>
+            <button class="lang-option flex w-full items-center justify-between rounded-xl px-3 py-2 text-left hover:bg-soft" data-lang="ru"><span>Русский</span><span class="text-xs text-kyBlue">RU</span></button>
+          </div>
+        </div>
+        <a href="contact.html" class="magnetic rounded-full bg-kyBlue px-5 py-3 text-[12px] font-extrabold uppercase tracking-[.14em] text-white transition hover:bg-kyGreen" data-i18n="talk">Talk to Us</a>
+      </div>
+      <button id="mobileBtn" class="rounded-full border border-black/10 bg-white p-3 text-ink shadow-card lg:hidden" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div class="h-1 w-full bg-gradient-to-r from-kyBlue via-kyBlue to-kyGreen opacity-95"></div>
+    <div class="h-[2px] w-full bg-transparent"><div id="scrollProgress" class="scroll-progress h-full bg-gradient-to-r from-kyBlue to-kyGreen"></div></div>
+    <div id="mobileMenu" class="hidden border-t border-black/10 bg-white px-5 py-6 shadow-card lg:hidden">
+      <div class="flex flex-col gap-4 text-sm font-extrabold uppercase tracking-[.16em] text-ink">
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="products.html" data-i18n="nav_projects">Products</a>
+        <a href="industries.html" data-i18n="nav_industries">Industries</a>
+        <a href="projects.html" data-i18n="nav_cases">Cases</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="mt-5 flex gap-2">
+        <button class="lang-option rounded-full border border-line px-4 py-2 text-sm font-bold" data-lang="en">EN</button>
+        <button class="lang-option rounded-full border border-line px-4 py-2 text-sm font-bold" data-lang="es">ES</button>
+        <button class="lang-option rounded-full border border-line px-4 py-2 text-sm font-bold" data-lang="ru">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero-bg pt-28">
+    <section class="mx-auto grid min-h-[620px] max-w-[1420px] gap-12 px-5 py-20 lg:grid-cols-[.95fr_1.05fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyBlue" data-i18n="hero_eyebrow">Products</p>
+        <h1 class="brand-line mt-5 text-5xl font-black leading-[1.02] tracking-[-.06em] sm:text-6xl lg:text-7xl" data-i18n="hero_title">Core equipment for industrial exhaust treatment.</h1>
+        <p class="mt-12 max-w-2xl text-lg font-medium leading-8 text-gray-600" data-i18n="hero_text">Select the right treatment equipment for VOCs, dust, odor, oil mist and complex industrial emissions. KangYu EnTech combines these products into practical treatment systems based on real production conditions.</p>
+        <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+          <a href="contact.html" class="magnetic inline-flex items-center justify-center rounded-full bg-kyBlue px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-white shadow-brand transition hover:bg-kyBlueDark" data-i18n="talk">Talk to Us</a>
+          <a href="solutions.html" class="magnetic inline-flex items-center justify-center rounded-full border border-kyBlue/25 bg-white px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-kyBlue transition hover:bg-kyBlue hover:text-white" data-i18n="view_solutions">View Solutions</a>
+        </div>
+      </div>
+      <div class="reveal relative">
+        <div class="absolute -left-8 -top-8 h-32 w-32 rounded-full bg-kyGreen/20 blur-3xl"></div>
+        <div class="rounded-[2.4rem] border border-line bg-white p-8 shadow-soft">
+          <img src="images/product-zeolite-rto.webp" alt="KangYu EnTech core products" class="mx-auto h-[340px] w-full object-contain">
+          <div class="mt-7 grid grid-cols-3 gap-3 text-center">
+            <div class="rounded-2xl bg-soft p-4"><b class="text-2xl text-kyBlue">8</b><p class="mt-1 text-xs font-bold uppercase tracking-[.13em] text-gray-500">Products</p></div>
+            <div class="rounded-2xl bg-soft p-4"><b class="text-2xl text-kyGreenDark">5</b><p class="mt-1 text-xs font-bold uppercase tracking-[.13em] text-gray-500">Processes</p></div>
+            <div class="rounded-2xl bg-soft p-4"><b class="text-2xl text-kyBlue">1</b><p class="mt-1 text-xs font-bold uppercase tracking-[.13em] text-gray-500">System</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="bg-white py-10">
+    <div class="mx-auto max-w-[1420px] px-5 lg:px-8">
+      <div class="reveal flex flex-wrap gap-3">
+        <a class="category-pill" href="#voc" data-i18n="cat_1">VOCs Treatment</a>
+        <a class="category-pill" href="#dust" data-i18n="cat_2">Dust & Oil Mist</a>
+        <a class="category-pill" href="#odor" data-i18n="cat_3">Odor Control</a>
+        <a class="category-pill" href="#pretreatment" data-i18n="cat_4">Pre-treatment</a>
+        <a class="category-pill" href="#integration" data-i18n="cat_5">Integrated Systems</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section-k bg-white py-20">
+    <div class="mx-auto max-w-[1420px] px-5 lg:px-8">
+      <div class="reveal flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyBlue" data-i18n="products_eyebrow">Core Products</p>
+          <h2 class="brand-line mt-4 max-w-4xl text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl" data-i18n="products_title">Built for complete treatment lines, not isolated equipment.</h2>
+        </div>
+        <a href="contact.html" class="magnetic w-fit rounded-full border border-kyBlue/30 bg-white px-6 py-3 text-sm font-extrabold uppercase tracking-[.14em] text-kyBlue transition hover:bg-kyBlue hover:text-white" data-i18n="request_proposal">Request Proposal</a>
+      </div>
+
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <a id="voc" href="products/zeolite-rotor-rto.html" class="product-card">
+          <span class="product-tag">VOCs</span>
+          <div class="product-media"><img src="images/product-zeolite-rto.webp" alt="Zeolite Rotor and RTO"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p1_title">Zeolite Rotor + RTO</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p1_desc">Concentrates large-volume, low-concentration VOC streams before thermal oxidation.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a href="products/rto-system.html" class="product-card">
+          <span class="product-tag">Thermal Oxidation</span>
+          <div class="product-media"><img src="images/product-rto.webp" alt="RTO System"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p2_title">RTO System</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p2_desc">Regenerative thermal oxidation for stable VOC destruction and heat recovery.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a id="dust" href="products/high-voltage-esp.html" class="product-card">
+          <span class="product-tag">Oil Mist / Smoke</span>
+          <div class="product-media"><img src="images/product-esp.webp" alt="High-Voltage ESP"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p3_title">High-Voltage ESP</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p3_desc">Electrostatic purification for fine particles, oil mist and industrial smoke.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a id="pretreatment" href="products/cyclonic-scrubber.html" class="product-card">
+          <span class="product-tag">Wet Pre-treatment</span>
+          <div class="product-media"><img src="images/product-scrubber.webp" alt="Cyclonic Scrubber"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p4_title">Cyclonic Scrubber</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p4_desc">Wet pre-treatment for sticky dust, paint mist, odor and oily exhaust.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a id="odor" href="products/activated-carbon.html" class="product-card">
+          <span class="product-tag">Adsorption</span>
+          <div class="product-media"><img src="images/product-carbon.webp" alt="Activated Carbon System"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p5_title">Activated Carbon</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p5_desc">Adsorption, desorption and catalytic oxidation integration for VOC polishing.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a href="products/dust-collector.html" class="product-card">
+          <span class="product-tag">Dust Control</span>
+          <div class="product-media"><img src="images/product-dust.webp" alt="Dust Collector"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p6_title">Dust Collector</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p6_desc">Pulse-jet cartridge filtration for continuous dust capture and stable operation.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a href="products/filter-box.html" class="product-card">
+          <span class="product-tag">Protection</span>
+          <div class="product-media"><img src="images/product-filter.webp" alt="Filter Box"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p7_title">Filter Box</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p7_desc">Protects downstream systems from dust, paint mist and process impurities.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+
+        <a id="integration" href="products/co-furnace.html" class="product-card">
+          <span class="product-tag">Catalytic Oxidation</span>
+          <div class="product-media"><img src="images/product-co.webp" alt="CO Furnace"></div>
+          <div class="product-body">
+            <span class="mb-5 block h-1.5 w-16 rounded-full bg-gradient-to-r from-kyBlue to-kyGreen"></span>
+            <h3 class="text-2xl font-black tracking-[-.03em]" data-i18n="p8_title">CO Furnace</h3>
+            <p class="mt-4 text-[15px] leading-7" data-i18n="p8_desc">Catalytic oxidation for lower-temperature VOC treatment applications.</p>
+            <span class="product-link">View Details <span>→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-k bg-soft py-24">
+    <div class="mx-auto max-w-[1420px] px-5 lg:px-8">
+      <div class="reveal max-w-3xl">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyGreenDark" data-i18n="choose_eyebrow">Product Selection</p>
+        <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl" data-i18n="choose_title">Not sure which system fits your process?</h2>
+      </div>
+      <div class="mt-16 grid gap-6 lg:grid-cols-4">
+        <div class="selection-card reveal"><div class="number-dot">1</div><h3 class="mt-6 text-xl font-black" data-i18n="q1">What is the exhaust type?</h3><p class="mt-3 leading-7 text-gray-600" data-i18n="q1_desc">VOCs, oil mist, dust, odor, paint mist and mixed emissions need different process routes.</p></div>
+        <div class="selection-card reveal"><div class="number-dot">2</div><h3 class="mt-6 text-xl font-black" data-i18n="q2">What is the air volume?</h3><p class="mt-3 leading-7 text-gray-600" data-i18n="q2_desc">Air volume and concentration decide whether rotor concentration, RTO or adsorption is suitable.</p></div>
+        <div class="selection-card reveal"><div class="number-dot">3</div><h3 class="mt-6 text-xl font-black" data-i18n="q3">Is pre-treatment needed?</h3><p class="mt-3 leading-7 text-gray-600" data-i18n="q3_desc">Dust, sticky mist and moisture should be removed before core purification equipment.</p></div>
+        <div class="selection-card reveal"><div class="number-dot">4</div><h3 class="mt-6 text-xl font-black" data-i18n="q4">What is the emission target?</h3><p class="mt-3 leading-7 text-gray-600" data-i18n="q4_desc">Final compliance requirements define polishing, monitoring and system integration design.</p></div>
+      </div>
+      <a href="contact.html" class="magnetic mt-12 inline-flex rounded-full bg-kyBlue px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-white shadow-brand transition hover:bg-kyGreen" data-i18n="selection_cta">Request Engineering Selection</a>
+    </div>
+  </section>
+
+  <section class="bg-white py-24">
+    <div class="mx-auto max-w-[1420px] px-5 lg:px-8">
+      <div class="reveal max-w-3xl">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyBlue" data-i18n="compare_eyebrow">Comparison</p>
+        <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl" data-i18n="compare_title">Quick product comparison for engineering buyers.</h2>
+      </div>
+      <div class="compare-table reveal mt-16 overflow-x-auto">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Best For</th><th>Main Function</th><th>Common System Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Zeolite Rotor + RTO</td><td>Large air volume, low-concentration VOCs</td><td>Concentration + thermal oxidation</td><td>Core VOC treatment system</td></tr>
+            <tr><td>RTO System</td><td>Medium/high-concentration VOCs</td><td>Regenerative thermal oxidation</td><td>Stable VOC destruction</td></tr>
+            <tr><td>High-Voltage ESP</td><td>Oil mist, smoke, fine particles</td><td>Electrostatic purification</td><td>Pre-treatment or main purification</td></tr>
+            <tr><td>Cyclonic Scrubber</td><td>Sticky dust, paint mist, odor</td><td>Wet washing and capture</td><td>Pre-treatment protection</td></tr>
+            <tr><td>Activated Carbon</td><td>Odor and VOC polishing</td><td>Adsorption / desorption</td><td>Polishing or combined treatment</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band py-24 text-white">
+    <div class="mx-auto grid max-w-[1420px] gap-10 px-5 lg:grid-cols-[.95fr_1.05fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-sm font-extrabold uppercase tracking-[.24em] text-kyGreen" data-i18n="system_eyebrow">System Integration</p>
+        <h2 class="brand-line mt-4 text-4xl font-black leading-tight tracking-[-.045em] sm:text-5xl" data-i18n="system_title">More than equipment. We build complete treatment systems.</h2>
+        <p class="mt-10 max-w-2xl text-lg leading-8 text-white/76" data-i18n="system_text">KangYu EnTech combines pre-treatment, core purification and final polishing into complete industrial exhaust treatment lines matched to production conditions.</p>
+        <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+          <a href="solutions.html" class="magnetic inline-flex justify-center rounded-full bg-white px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-kyNavy transition hover:bg-kyGreen" data-i18n="view_solutions">View Solutions</a>
+          <a href="projects.html" class="magnetic inline-flex justify-center rounded-full border border-white/25 px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] text-white transition hover:bg-white hover:text-kyNavy" data-i18n="view_projects">View Projects</a>
+        </div>
+      </div>
+      <div class="reveal rounded-[2rem] bg-white/8 p-5 ring-1 ring-white/12">
+        <img src="images/hero-integrated-line.webp" alt="Integrated KangYu EnTech exhaust treatment line" class="h-[360px] w-full rounded-[1.5rem] object-cover">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="fixed bottom-6 right-5 z-50 lg:bottom-8 lg:right-8">
+    <div id="assistantPanel" class="assistant-panel mb-4 w-[310px] rounded-[1.6rem] border border-line bg-white p-5 shadow-soft">
+      <div class="mb-4 flex items-center gap-3">
+        <img src="images/k-mark.png" alt="KangYu K assistant" class="h-10 w-10 object-contain">
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-[.18em] text-kyGreenDark">K Assistant</p>
+          <h3 class="text-lg font-black tracking-[-.03em] text-ink">Product Selection Help</h3>
+        </div>
+      </div>
+      <p class="text-sm leading-6 text-gray-600">Not sure which product fits your process? Share air volume, waste gas type and target emission. Our engineers can recommend a process route.</p>
+      <div class="mt-5 grid gap-3">
+        <a href="contact.html" class="assistant-link">Request Engineering Selection →</a>
+        <a href="solutions.html" class="assistant-link">View Solution Logic →</a>
+        <a href="projects.html" class="assistant-link">See Real Installations →</a>
+      </div>
+    </div>
+    <button id="assistantBtn" class="k-pulse grid h-16 w-16 place-items-center rounded-full bg-white shadow-brand ring-1 ring-kyBlue/20 transition hover:scale-105" aria-label="Open KangYu assistant">
+      <img src="images/k-mark.png" alt="KangYu K mark" class="h-11 w-11 object-contain">
+    </button>
+  </div>
+
+  <footer class="relative overflow-hidden bg-kyNavy text-white">
+    <div class="footer-orbit hidden lg:block"></div>
+    <div class="h-1.5 w-full bg-gradient-to-r from-kyBlue via-kyBlue to-kyGreen"></div>
+    <div class="mx-auto grid max-w-[1420px] gap-10 px-5 py-16 lg:grid-cols-[1.18fr_.78fr_.82fr_1fr] lg:px-8">
+      <div>
+        <div class="brand-lockup">
+          <img src="images/k-mark.png" alt="KangYu K mark" class="brand-k" />
+          <span class="brand-script on-dark">
+            <span class="kangyu">KANGYU</span><span class="entech">ENTECH</span>
+          </span>
+        </div>
+        <p class="mt-6 max-w-md text-sm leading-7 text-white/78">Industrial air and waste gas treatment systems focused on fast understanding: custom engineering, proven installations, and stable delivery for VOCs, dust, odor and oil mist.</p>
+        <div class="mt-5 flex flex-wrap gap-2 footer-mini">
+          <span class="value-pill !bg-white/95 !text-kyNavy">20+ Years</span>
+          <span class="value-pill !bg-white/95 !text-kyNavy">34+ Case References</span>
+          <span class="value-pill !bg-white/95 !text-kyNavy">Turnkey Support</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="cert-badge" aria-label="ISO certification">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2.2"/><text x="20" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">ISO</text></svg>
+            <span>ISO</span>
+          </span>
+          <span class="cert-badge" aria-label="CE conformity">
+            <svg viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 8a12 12 0 100 24" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M38 8H28m10 12H28m10 12H28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            <span>CE</span>
+          </span>
+          <span class="cert-badge">Turnkey Systems</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="social-btn" href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+          <a class="social-btn" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="social-btn" href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+        </div>
+      </div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Products</h4><div class="mt-5 flex flex-col gap-3 text-sm text-white/72"><a class="interactive-link hover:text-white" href="products.html#zeolite-rto">Zeolite Rotor + RTO</a><a class="interactive-link hover:text-white" href="products.html#rto">RTO System</a><a class="interactive-link hover:text-white" href="products.html#esp">High-Voltage ESP</a><a class="interactive-link hover:text-white" href="products.html#activated-carbon">Activated Carbon</a><a class="interactive-link hover:text-white" href="products.html#scrubber">Cyclonic Scrubber</a></div></div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Quick Links</h4><div class="mt-5 flex flex-col gap-3 text-sm text-white/72"><a class="interactive-link hover:text-white" href="about.html">About Us</a><a class="interactive-link hover:text-white" href="solutions.html">Solutions</a><a class="interactive-link hover:text-white" href="industries.html">Industries</a><a class="interactive-link hover:text-white" href="projects.html">Case Studies</a><a class="interactive-link hover:text-white" href="service.html">Service</a><a class="interactive-link hover:text-white" href="faq.html">FAQ</a><a class="interactive-link hover:text-white" href="contact.html">Contact</a><span>EN / ES / RU</span></div></div>
+      <div><h4 class="text-sm font-extrabold uppercase tracking-[.18em] text-kyGreen">Contact</h4><div class="mt-5 space-y-3 text-sm leading-7 text-white/72"><p><b class="text-white">Jiangsu KangYu Environmental Protection Technology Co., Ltd.</b></p><p>16 Limin Road, Louwang Town, Yancheng City, Jiangsu Province 224031, China</p><p>Tel: <a class="interactive-link hover:text-white" href="tel:+8651588663333">+86-515-8866 3333</a><br>Email: <a class="interactive-link hover:text-white" href="mailto:lvkang@jskyep.com">lvkang@jskyep.com</a><br>Web: <a class="interactive-link hover:text-white" href="https://www.jskyep.com" target="_blank" rel="noreferrer">www.jskyep.com</a></p></div></div>
+    </div>
+    <div class="border-t border-white/10"><div class="mx-auto flex max-w-[1420px] flex-col gap-4 px-5 py-6 text-xs text-white/58 lg:flex-row lg:items-center lg:justify-between lg:px-8"><p>© 2026 KangYu EnTech. All rights reserved.</p><p>Industrial emission control · VOCs treatment · Dust removal · Odor purification</p></div></div>
+  </footer>
+
+  <script>
+    const i18n = {
+      en: {
+        nav_about:'About', nav_solutions:'Solutions', nav_projects:'Products', nav_industries:'Industries', nav_cases:'Cases', nav_faq:'FAQ', nav_contact:'Contact',
+        talk:'Talk to Us', view_solutions:'View Solutions', view_projects:'View Projects', request_proposal:'Request Proposal',
+        hero_eyebrow:'Products', hero_title:'Core equipment for industrial exhaust treatment.', hero_text:'Select the right treatment equipment for VOCs, dust, odor, oil mist and complex industrial emissions. KangYu EnTech combines these products into practical treatment systems based on real production conditions.',
+        cat_1:'VOCs Treatment', cat_2:'Dust & Oil Mist', cat_3:'Odor Control', cat_4:'Pre-treatment', cat_5:'Integrated Systems',
+        products_eyebrow:'Core Products', products_title:'Built for complete treatment lines, not isolated equipment.',
+        p1_title:'Zeolite Rotor + RTO', p1_desc:'Concentrates large-volume, low-concentration VOC streams before thermal oxidation.',
+        p2_title:'RTO System', p2_desc:'Regenerative thermal oxidation for stable VOC destruction and heat recovery.',
+        p3_title:'High-Voltage ESP', p3_desc:'Electrostatic purification for fine particles, oil mist and industrial smoke.',
+        p4_title:'Cyclonic Scrubber', p4_desc:'Wet pre-treatment for sticky dust, paint mist, odor and oily exhaust.',
+        p5_title:'Activated Carbon', p5_desc:'Adsorption, desorption and catalytic oxidation integration for VOC polishing.',
+        p6_title:'Dust Collector', p6_desc:'Pulse-jet cartridge filtration for continuous dust capture and stable operation.',
+        p7_title:'Filter Box', p7_desc:'Protects downstream systems from dust, paint mist and process impurities.',
+        p8_title:'CO Furnace', p8_desc:'Catalytic oxidation for lower-temperature VOC treatment applications.',
+        choose_eyebrow:'Product Selection', choose_title:'Not sure which system fits your process?',
+        q1:'What is the exhaust type?', q1_desc:'VOCs, oil mist, dust, odor, paint mist and mixed emissions need different process routes.',
+        q2:'What is the air volume?', q2_desc:'Air volume and concentration decide whether rotor concentration, RTO or adsorption is suitable.',
+        q3:'Is pre-treatment needed?', q3_desc:'Dust, sticky mist and moisture should be removed before core purification equipment.',
+        q4:'What is the emission target?', q4_desc:'Final compliance requirements define polishing, monitoring and system integration design.',
+        selection_cta:'Request Engineering Selection',
+        compare_eyebrow:'Comparison', compare_title:'Quick product comparison for engineering buyers.',
+        system_eyebrow:'System Integration', system_title:'More than equipment. We build complete treatment systems.', system_text:'KangYu EnTech combines pre-treatment, core purification and final polishing into complete industrial exhaust treatment lines matched to production conditions.'
+      },
+      es: {
+        nav_about:'Empresa', nav_solutions:'Soluciones', nav_projects:'Productos', nav_industries:'Industrias', nav_cases:'Casos', nav_faq:'FAQ', nav_contact:'Contacto',
+        talk:'Hable con nosotros', view_solutions:'Ver soluciones', view_projects:'Ver proyectos', request_proposal:'Solicitar propuesta',
+        hero_eyebrow:'Productos', hero_title:'Equipos principales para el tratamiento de gases industriales.', hero_text:'Seleccione el equipo adecuado para COV, polvo, olores, neblina de aceite y emisiones industriales complejas. KangYu EnTech integra estos productos en sistemas prácticos según las condiciones reales de producción.',
+        cat_1:'Tratamiento de COV', cat_2:'Polvo y neblina de aceite', cat_3:'Control de olores', cat_4:'Pretratamiento', cat_5:'Sistemas integrados',
+        products_eyebrow:'Productos principales', products_title:'Diseñados para líneas completas de tratamiento, no como equipos aislados.',
+        p1_title:'Rotor de zeolita + RTO', p1_desc:'Concentra grandes volúmenes de COV de baja concentración antes de la oxidación térmica.',
+        p2_title:'Sistema RTO', p2_desc:'Oxidación térmica regenerativa para destrucción estable de COV y recuperación de calor.',
+        p3_title:'ESP de alto voltaje', p3_desc:'Purificación electrostática para partículas finas, neblina de aceite y humo industrial.',
+        p4_title:'Lavador ciclónico', p4_desc:'Pretratamiento húmedo para polvo pegajoso, niebla de pintura, olores y gases aceitosos.',
+        p5_title:'Carbón activado', p5_desc:'Integración de adsorción, desorción y oxidación catalítica para pulido de COV.',
+        p6_title:'Colector de polvo', p6_desc:'Filtración pulse-jet para captura continua de polvo y operación estable.',
+        p7_title:'Caja de filtros', p7_desc:'Protege los sistemas posteriores contra polvo, niebla de pintura e impurezas.',
+        p8_title:'Horno CO', p8_desc:'Oxidación catalítica para aplicaciones de COV a menor temperatura.',
+        choose_eyebrow:'Selección de producto', choose_title:'¿No está seguro de qué sistema se adapta a su proceso?',
+        q1:'¿Qué tipo de gas tiene?', q1_desc:'COV, neblina de aceite, polvo, olor, niebla de pintura y emisiones mixtas requieren rutas diferentes.',
+        q2:'¿Cuál es el caudal?', q2_desc:'El caudal y la concentración determinan si conviene rotor, RTO o adsorción.',
+        q3:'¿Se necesita pretratamiento?', q3_desc:'El polvo, la niebla pegajosa y la humedad deben eliminarse antes del equipo principal.',
+        q4:'¿Cuál es el objetivo de emisión?', q4_desc:'Los requisitos de cumplimiento definen el pulido, monitoreo e integración del sistema.',
+        selection_cta:'Solicitar selección técnica',
+        compare_eyebrow:'Comparación', compare_title:'Comparación rápida para compradores técnicos.',
+        system_eyebrow:'Integración del sistema', system_title:'Más que equipos. Construimos sistemas completos.', system_text:'KangYu EnTech combina pretratamiento, purificación principal y pulido final en líneas completas adaptadas a condiciones reales.'
+      },
+      ru: {
+        nav_about:'О компании', nav_solutions:'Решения', nav_projects:'Продукты', nav_industries:'Отрасли', nav_cases:'Кейсы', nav_faq:'FAQ', nav_contact:'Контакты',
+        talk:'Связаться', view_solutions:'Смотреть решения', view_projects:'Смотреть проекты', request_proposal:'Запросить предложение',
+        hero_eyebrow:'Продукты', hero_title:'Основное оборудование для очистки промышленных выбросов.', hero_text:'Выберите подходящее оборудование для ЛОС, пыли, запахов, масляного тумана и сложных промышленных выбросов. KangYu EnTech объединяет эти продукты в практичные системы под реальные производственные условия.',
+        cat_1:'Очистка ЛОС', cat_2:'Пыль и масляный туман', cat_3:'Контроль запахов', cat_4:'Предочистка', cat_5:'Интегрированные системы',
+        products_eyebrow:'Основные продукты', products_title:'Созданы для комплексных линий очистки, а не как отдельное оборудование.',
+        p1_title:'Цеолитовый ротор + RTO', p1_desc:'Концентрирует большие объемы ЛОС низкой концентрации перед термоокислением.',
+        p2_title:'Система RTO', p2_desc:'Регенеративное термоокисление для стабильного разрушения ЛОС и рекуперации тепла.',
+        p3_title:'Высоковольтный ESP', p3_desc:'Электростатическая очистка мелких частиц, масляного тумана и промышленного дыма.',
+        p4_title:'Циклонный скруббер', p4_desc:'Влажная предочистка липкой пыли, красочного тумана, запахов и масляных выбросов.',
+        p5_title:'Активированный уголь', p5_desc:'Интеграция адсорбции, десорбции и каталитического окисления для финишной очистки ЛОС.',
+        p6_title:'Пылеуловитель', p6_desc:'Pulse-jet фильтрация для непрерывного улавливания пыли и стабильной работы.',
+        p7_title:'Фильтровальный короб', p7_desc:'Защищает последующие системы от пыли, красочного тумана и примесей процесса.',
+        p8_title:'Печь CO', p8_desc:'Каталитическое окисление для обработки ЛОС при более низкой температуре.',
+        choose_eyebrow:'Подбор продукта', choose_title:'Не уверены, какая система подходит вашему процессу?',
+        q1:'Какой тип выбросов?', q1_desc:'ЛОС, масляный туман, пыль, запах, красочный туман и смешанные выбросы требуют разных маршрутов.',
+        q2:'Какой расход воздуха?', q2_desc:'Расход и концентрация определяют, нужен ли ротор, RTO или адсорбция.',
+        q3:'Нужна ли предочистка?', q3_desc:'Пыль, липкий туман и влага должны удаляться перед основным оборудованием.',
+        q4:'Какова цель по выбросам?', q4_desc:'Нормативные требования определяют финишную очистку, мониторинг и интеграцию системы.',
+        selection_cta:'Запросить инженерный подбор',
+        compare_eyebrow:'Сравнение', compare_title:'Быстрое сравнение для инженерных покупателей.',
+        system_eyebrow:'Интеграция системы', system_title:'Больше, чем оборудование. Мы строим комплексные системы.', system_text:'KangYu EnTech объединяет предочистку, основную очистку и финишную доочистку в комплексные линии под реальные условия производства.'
+      }
+    };
+
+
+    const assistantBtn = document.getElementById('assistantBtn');
+    const assistantPanel = document.getElementById('assistantPanel');
+    assistantBtn?.addEventListener('click', () => {
+      assistantPanel?.classList.toggle('open');
+    });
+
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    function setLanguage(lang){
+      const dict = i18n[lang] || i18n.en;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if(dict[key]) el.textContent = dict[key];
+      });
+      document.querySelectorAll('.lang-option').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+      localStorage.setItem('kangyuLang', lang);
+    }
+    document.querySelectorAll('.lang-option').forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
+    setLanguage(localStorage.getItem('kangyuLang') || 'en');
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold:.13 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const scrollProgress = document.getElementById('scrollProgress');
+    function updateScrollProgress(){
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const p = h > 0 ? window.scrollY / h : 0;
+      if(scrollProgress) scrollProgress.style.transform = `scaleX(${p})`;
+    }
+    updateScrollProgress();
+    window.addEventListener('scroll', updateScrollProgress, {passive:true});
+  </script>
+</body>
+</html>
